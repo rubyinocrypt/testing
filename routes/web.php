@@ -11,7 +11,11 @@
 |
 */
 
+Route::get('/testing',function (){
 
+
+    return "done2";
+});
 // Language Route
 Route::post('/lang', array(
     'Middleware' => 'LanguageSwitcher',
