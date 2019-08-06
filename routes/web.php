@@ -17,15 +17,15 @@ Route::get('/testing',function (){
     return "done2";
 });
 // Language Route
-Route::post('/lang', array(
-    'Middleware' => 'LanguageSwitcher',
-    'uses' => 'LanguageController@index',
-))->name('lang');
-// For Language direct URL link
-Route::get('/lang/{lang}', array(
-    'Middleware' => 'LanguageSwitcher',
-    'uses' => 'LanguageController@change',
-))->name('langChange');
+//Route::post('/lang', array(
+//    'Middleware' => 'LanguageSwitcher',
+//    'uses' => 'LanguageController@index',
+//))->name('lang');
+//// For Language direct URL link
+//Route::get('/lang/{lang}', array(
+//    'Middleware' => 'LanguageSwitcher',
+//    'uses' => 'LanguageController@change',
+//))->name('langChange');
 // .. End of Language Route
 
 
